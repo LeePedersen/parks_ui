@@ -1,8 +1,5 @@
-<h2>Parks</h2>
 <% if @parks %>
   <% @parks.each do |park| %>
-    <%= park["picture_file_name"] %>
-    <p><img src='#{park["picture_file_name"]}' alt="picture of park"> Park: <%= park["name"] %></p>
+    <p><img src="<%= park_image %>" alt="picture of park"> Park: <%= park["name"] %></p>
   <% end %>
-</ul>
 <% end %>
