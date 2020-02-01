@@ -1,5 +1,13 @@
 <% if @parks %>
+<div class="grid-container">
+
   <% @parks.each do |park| %>
-    <p><img src="<%= park_image %>" alt="picture of park"> Park: <%= park["name"] %></p>
+    <div class="grid-item">
+      <p>Park: <%= park["name"] %></p>
+      <p><img src="<%= park["picture_file_name"] %>" alt="picture of park"></p>
+    </div>
   <% end %>
+<% else %>
+  <p>There are no parks. Go away</p>
+  </div>
 <% end %>

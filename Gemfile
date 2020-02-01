@@ -5,4 +5,4 @@ gem 'sinatra-contrib'
 gem 'pry'
 gem 'rspec'
 
-gem 'googleauth'
+# gem 'googleauth'
